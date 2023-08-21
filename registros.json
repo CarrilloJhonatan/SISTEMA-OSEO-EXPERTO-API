@@ -1,58 +1,56 @@
 [
     {
-        "usuario": "juan",
+        "usuario": "to\u00f1p29",
         "respuestas": {
             "lugar_del_dolor": "SI",
             "duracion_del_dolor": "SI",
-            "tipo_de_dolor": "SI",
+            "tipo_de_dolor": "NO",
             "sintomas_adicionales": "SI",
             "historial_medico": "SI"
         },
-        "diagnostico": [
-            "Necesidad de Evaluaci\u00f3n M\u00e9dica Adicional"
-        ],
-        "fecha_registro": "2023-08-20 19:21:16.198325"
+        "diagnostico": [],
+        "fecha_registro": "2023-08-21 18:42:59.364241"
     },
     {
-        "usuario": "JHONATAN",
+        "usuario": "to\u00f1p29",
         "respuestas": {
-            "lugar_del_dolor": "SI",
-            "duracion_del_dolor": "SI",
-            "tipo_de_dolor": "SI",
-            "sintomas_adicionales": "NO",
-            "historial_medico": "SI"
+            "lugar_del_dolor": "si",
+            "duracion_del_dolor": "si",
+            "tipo_de_dolor": "no",
+            "sintomas_adicionales": "no",
+            "historial_medico": "no"
         },
         "diagnostico": [
-            "Condici\u00f3n Cr\u00f3nica"
+            "Lesi\u00f3n Muscular"
         ],
-        "fecha_registro": "2023-08-20 19:21:29.991713"
+        "fecha_registro": "2023-08-21 18:43:28.408154"
     },
     {
-        "usuario": "JHONATAN",
+        "usuario": "jhonstan",
         "respuestas": {
-            "lugar_del_dolor": "SI",
-            "duracion_del_dolor": "SI",
-            "tipo_de_dolor": "NO",
-            "sintomas_adicionales": "NO",
-            "historial_medico": "SI"
+            "lugar_del_dolor": "no",
+            "duracion_del_dolor": "no",
+            "tipo_de_dolor": "no",
+            "sintomas_adicionales": "no",
+            "historial_medico": "no"
         },
         "diagnostico": [
-            "Condici\u00f3n Cr\u00f3nica"
+            "Sin Diagn\u00f3stico Espec\u00edfico"
         ],
-        "fecha_registro": "2023-08-20 19:21:58.557720"
+        "fecha_registro": "2023-08-21 18:43:45.609982"
     },
     {
-        "usuario": "ESTEFHANY",
+        "usuario": "jhonatan",
         "respuestas": {
-            "lugar_del_dolor": "SI",
-            "duracion_del_dolor": "NO",
-            "tipo_de_dolor": "NO",
-            "sintomas_adicionales": "NO",
-            "historial_medico": "SI"
+            "lugar_del_dolor": "no",
+            "duracion_del_dolor": "no",
+            "tipo_de_dolor": "si",
+            "sintomas_adicionales": "no",
+            "historial_medico": "no"
         },
         "diagnostico": [
-            "Osteoartritis"
+            "Inflamaci\u00f3n o Irritaci\u00f3n"
         ],
-        "fecha_registro": "2023-08-20 19:22:12.089904"
+        "fecha_registro": "2023-08-21 18:43:58.488029"
     }
 ]
