@@ -12,20 +12,20 @@ class SistemaOseoEngine(KnowledgeEngine):
         diagnosticos = getattr(self, 'diagnosticos', [])  # Obtener los diagnósticos del atributo "diagnosticos"
         setattr(self, 'diagnosticos', [])  # Reiniciar la lista de diagnósticos para futuras ejecuciones
         return diagnosticos  # Retornar la lista de diagnósticos recolectados
-#1
+# 1
 # Esta regla es ejecutada por el motor de reglas para agregar un diagnóstico a la lista de diagnósticos
     @Rule(AND(reglas(lugar_del_dolor="NO")), (reglas(duracion_del_dolor="NO")), (reglas(tipo_de_dolor="NO")), (reglas(sintomas_adicionales="NO")), (reglas(historial_medico="NO")))
     def r1(self):
         self.diagnosticos.append("Sin Diagnóstico Específico")  # Agregar un diagnóstico a la lista
-#2
+# 2
     @Rule(AND(reglas(lugar_del_dolor="NO")), (reglas(duracion_del_dolor="NO")), (reglas(tipo_de_dolor="NO")), (reglas(sintomas_adicionales="NO")), (reglas(historial_medico="SI")))
     def r2(self):
         self.diagnosticos.append("Enfermedad Preexistente")
-#3
+# 3
     @Rule(AND(reglas(lugar_del_dolor="NO")), (reglas(duracion_del_dolor="NO")), (reglas(tipo_de_dolor="NO")), (reglas(sintomas_adicionales="SI")), (reglas(historial_medico="NO")))
     def r3(self):
         self.diagnosticos.append("Infección")
-#4
+# 4
     @Rule(AND(reglas(lugar_del_dolor="NO")), (reglas(duracion_del_dolor="NO")), (reglas(tipo_de_dolor="NO")), (reglas(sintomas_adicionales="SI")), (reglas(historial_medico="SI")))
     def r4(self):
         self.diagnosticos.append("Infección")
