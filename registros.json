@@ -1,0 +1,58 @@
+[
+    {
+        "usuario": "juan",
+        "respuestas": {
+            "lugar_del_dolor": "SI",
+            "duracion_del_dolor": "SI",
+            "tipo_de_dolor": "SI",
+            "sintomas_adicionales": "SI",
+            "historial_medico": "SI"
+        },
+        "diagnostico": [
+            "Necesidad de Evaluaci\u00f3n M\u00e9dica Adicional"
+        ],
+        "fecha_registro": "2023-08-20 19:21:16.198325"
+    },
+    {
+        "usuario": "JHONATAN",
+        "respuestas": {
+            "lugar_del_dolor": "SI",
+            "duracion_del_dolor": "SI",
+            "tipo_de_dolor": "SI",
+            "sintomas_adicionales": "NO",
+            "historial_medico": "SI"
+        },
+        "diagnostico": [
+            "Condici\u00f3n Cr\u00f3nica"
+        ],
+        "fecha_registro": "2023-08-20 19:21:29.991713"
+    },
+    {
+        "usuario": "JHONATAN",
+        "respuestas": {
+            "lugar_del_dolor": "SI",
+            "duracion_del_dolor": "SI",
+            "tipo_de_dolor": "NO",
+            "sintomas_adicionales": "NO",
+            "historial_medico": "SI"
+        },
+        "diagnostico": [
+            "Condici\u00f3n Cr\u00f3nica"
+        ],
+        "fecha_registro": "2023-08-20 19:21:58.557720"
+    },
+    {
+        "usuario": "ESTEFHANY",
+        "respuestas": {
+            "lugar_del_dolor": "SI",
+            "duracion_del_dolor": "NO",
+            "tipo_de_dolor": "NO",
+            "sintomas_adicionales": "NO",
+            "historial_medico": "SI"
+        },
+        "diagnostico": [
+            "Osteoartritis"
+        ],
+        "fecha_registro": "2023-08-20 19:22:12.089904"
+    }
+]
