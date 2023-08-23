@@ -1,4 +1,4 @@
-# Form implementation generated from reading ui file 'd:\Proyectos\SISTEMA-OSEO-EXPERTO-API2\sistema_oseo.ui'
+# Form implementation generated from reading ui file 'd:\Proyectos\SISTEMA-OSEO-EXPERTO-API\sistema_oseo.ui'
 #
 # Created by: PyQt6 UI code generator 6.5.2
 #
@@ -172,7 +172,7 @@ class Ui_MainWindow(object):
 "font: 57 10pt \"Poppins Medium\";")
         self.label_24.setObjectName("label_24")
         self.TextDiagnostico = QtWidgets.QTextEdit(parent=self.centralwidget)
-        self.TextDiagnostico.setEnabled(False)
+        self.TextDiagnostico.setEnabled(True)
         self.TextDiagnostico.setGeometry(QtCore.QRect(620, 520, 291, 121))
         self.TextDiagnostico.setObjectName("TextDiagnostico")
         self.enviarDatos = QtWidgets.QPushButton(parent=self.centralwidget)

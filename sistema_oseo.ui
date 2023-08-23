@@ -502,7 +502,7 @@ font: 57 10pt &quot;Poppins Medium&quot;;</string>
    </widget>
    <widget class="QTextEdit" name="TextDiagnostico">
     <property name="enabled">
-     <bool>false</bool>
+     <bool>true</bool>
     </property>
     <property name="geometry">
      <rect>
