@@ -15,11 +15,7 @@ class Ventana(QMainWindow):
         self.ui.onClickBuscar.clicked.connect(self.mostrar_resultados)
         self.ui.enviarDatos.clicked.connect(self.enviar_datos)
 
-    
-        self.ui.onClickBuscar.clicked.connect(self.mostrar_resultados)
-        self.ui.enviarDatos.clicked.connect(self.enviar_datos)
-
-# Función para mostrar los resultados de búsqueda según la entrada del usuario
+    # Función para mostrar los resultados de búsqueda según la entrada del usuario
     def mostrar_resultados(self):
         try:
             nombre = self.ui.filtradoNombre.text()  # Obtener la entrada del cuadro de texto
@@ -56,13 +52,14 @@ class Ventana(QMainWindow):
     # Función para enviar los datos del usuario al servidor
     def enviar_datos(self):
         try:
+            # Obtener los valores de los botones de opción
             diagnostico_1 = "si" if self.ui.radioButton_r1_1.isChecked() else "no"
             diagnostico_2 = "si" if self.ui.radioButton_r2_1.isChecked() else "no"
             diagnostico_3 = "si" if self.ui.radioButton_r3_1.isChecked() else "no"
             diagnostico_4 = "si" if self.ui.radioButton_r4_1.isChecked() else "no"
             diagnostico_5 = "si" if self.ui.radioButton_r5_1.isChecked() else "no"
 
-            usuario = self.ui.inputpostuser.text()
+            usuario = self.ui.inputpostuser.text()  # Obtener el texto del cuadro de entrada
 
             # Preparar los datos para enviar en la solicitud POST
             data = {
@@ -71,7 +68,7 @@ class Ventana(QMainWindow):
                 "tipo_de_dolor": diagnostico_3,
                 "duracion_del_dolor": diagnostico_4,
                 "historial_medico": diagnostico_5,
-                "usuario": usuario
+                "usuario": usuario  
             }
 
             # Enviar una solicitud POST al servidor
@@ -82,24 +79,25 @@ class Ventana(QMainWindow):
                 self.ui.TextDiagnostico.setPlainText("¡Datos enviados correctamente!")
                 self.limpiar_formulario()  # Llamar a la función para limpiar el formulario
             else:
-                self.ui.TextDiagnostico.setPlainText("Error al enviar los datos.")
+                self.ui.TextDiagnostico.setPlainText("Error al enviar los datos, valide que esta llenando todos los campos.")
 
         except requests.RequestException as e:
             self.ui.TextDiagnostico.setPlainText("Error al conectar con la API Flask.")
 
-    # Función para restablecer el formulario a su estado predeterminado
     def limpiar_formulario(self):
-        # Restablecer los valores de los botones de opción
-        for radio_button in [self.ui.radioButton_r1_0, self.ui.radioButton_r2_0,
-                             self.ui.radioButton_r3_0, self.ui.radioButton_r4_0,
-                             self.ui.radioButton_r5_0, self.ui.radioButton_r1_1,
-                             self.ui.radioButton_r2_1, self.ui.radioButton_r3_1,
-                             self.ui.radioButton_r4_1, self.ui.radioButton_r5_1]:
-            radio_button.setChecked(False)
-
-        # Limpiar el campo de entrada del usuario y el área de texto
+        # Restablecer los valores predeterminados de los widgets
+        self.ui.radioButton_r1_0.setChecked(False)
+        self.ui.radioButton_r2_0.setChecked(False)
+        self.ui.radioButton_r3_0.setChecked(False)
+        self.ui.radioButton_r4_0.setChecked(False)
+        self.ui.radioButton_r5_0.setChecked(False)
+        self.ui.radioButton_r1_1.setChecked(False)
+        self.ui.radioButton_r2_1.setChecked(False)
+        self.ui.radioButton_r3_1.setChecked(False)
+        self.ui.radioButton_r4_1.setChecked(False)
+        self.ui.radioButton_r5_1.setChecked(False)
         self.ui.inputpostuser.clear()
-        self.ui.TextDiagnostico.clear()
+
 
 # Iniciar la aplicación
 if __name__ == "__main__":
