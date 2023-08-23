@@ -1,56 +1,16 @@
 [
     {
-        "usuario": "to\u00f1p29",
-        "respuestas": {
-            "lugar_del_dolor": "SI",
-            "duracion_del_dolor": "SI",
-            "tipo_de_dolor": "NO",
-            "sintomas_adicionales": "SI",
-            "historial_medico": "SI"
-        },
-        "diagnostico": [],
-        "fecha_registro": "2023-08-21 18:42:59.364241"
-    },
-    {
-        "usuario": "to\u00f1p29",
+        "usuario": "perez",
         "respuestas": {
             "lugar_del_dolor": "si",
             "duracion_del_dolor": "si",
-            "tipo_de_dolor": "no",
-            "sintomas_adicionales": "no",
-            "historial_medico": "no"
-        },
-        "diagnostico": [
-            "Lesi\u00f3n Muscular"
-        ],
-        "fecha_registro": "2023-08-21 18:43:28.408154"
-    },
-    {
-        "usuario": "jhonstan",
-        "respuestas": {
-            "lugar_del_dolor": "no",
-            "duracion_del_dolor": "no",
-            "tipo_de_dolor": "no",
-            "sintomas_adicionales": "no",
-            "historial_medico": "no"
-        },
-        "diagnostico": [
-            "Sin Diagn\u00f3stico Espec\u00edfico"
-        ],
-        "fecha_registro": "2023-08-21 18:43:45.609982"
-    },
-    {
-        "usuario": "jhonatan",
-        "respuestas": {
-            "lugar_del_dolor": "no",
-            "duracion_del_dolor": "no",
             "tipo_de_dolor": "si",
-            "sintomas_adicionales": "no",
-            "historial_medico": "no"
+            "sintomas_adicionales": "si",
+            "historial_medico": "si"
         },
         "diagnostico": [
-            "Inflamaci\u00f3n o Irritaci\u00f3n"
+            "Necesidad de Evaluaci\u00f3n M\u00e9dica Adicional"
         ],
-        "fecha_registro": "2023-08-21 18:43:58.488029"
+        "fecha_registro": "2023-08-23 15:25:19.023601"
     }
 ]
